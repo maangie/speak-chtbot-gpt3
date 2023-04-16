@@ -13,7 +13,7 @@ import getResponse from "./get_response";
  *   })();
  */
 class ChatManager {
-  messages: Array<{ role: ChatCompletionRequestMessageRoleEnum; content: string }> = [];
+  messages: { role: ChatCompletionRequestMessageRoleEnum; content: string }[] = [];
 
   /**
    * ChatManager クラスのインスタンスを生成し、メッセージを初期化します。
