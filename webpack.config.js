@@ -5,7 +5,7 @@ module.exports = {
     path: `${__dirname}/dist`
   },
 
-  mode: "development",
+  mode: "production",
 
   resolve: {
     extensions: [".ts", ".js"]
