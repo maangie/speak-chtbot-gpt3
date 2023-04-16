@@ -53,17 +53,19 @@
           <label for="api-key" class="form-label">API Key</label>
           <input type="text" class="form-control" id="api-key" name="api_key" placeholder="48 alphanumeric characters"
             required />
-
+        </div>
+        <div class="form-group">
           <!-- ユーザー入力欄 -->
           <div id="user-input-container" hidden>
-            <label for="user-input">User Input:</label>
-            <input name="user_input" id="user-input" value="" hidden />
+            <label for="user-input" class="form-label">User Input:</label>
+            <input type="text" name="user_input" id="user-input" class="form-control" value="" />
           </div>
         </div>
         <!-- 送信ボタン -->
         <button type="submit" class="btn btn-primary mt-2" id="submit">Submit</button>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
