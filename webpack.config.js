@@ -1,3 +1,5 @@
+const TerserPlugin = require('terser-webpack-plugin');
+
 module.exports = {
   entry: "./src/index.ts",
 
@@ -26,5 +28,18 @@ module.exports = {
         loader: "ts-loader"
       }
     ]
-  }
+  },
+
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          format: {
+            comments: false,
+          },
+        },
+        extractComments: false,
+      }),
+    ],
+  },
 }
