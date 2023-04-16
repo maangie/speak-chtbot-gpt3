@@ -1,6 +1,4 @@
-# shin-coding-tutorial
-
- [【Typescript入門】本当の初心者からTypescript×Webpackの開発環境構築までをハンズオン形式で学ぼう！ - YouTube](https://youtu.be/ECc1EXnx7VQ)
+# speak-chatbot-gpt3
 
 ## REQUIREMENTS
 - [Node.js](https://nodejs.org/ja/)
