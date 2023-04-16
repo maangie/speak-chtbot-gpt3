@@ -77,7 +77,6 @@ import { setCookie, getCookie } from "./cookie";
 
   // HTML要素への参照を取得
   const apiKey = <HTMLInputElement>$("api-key");
-  const userInput = <HTMLInputElement>$("user-input");
   const submitButton = <HTMLButtonElement>$("submit");
 
   // ChatManagerインスタンスを初期化
@@ -94,5 +93,5 @@ import { setCookie, getCookie } from "./cookie";
   /**
    * submitボタンのonclickイベントを設定
    */
-  $("submit").onclick = () => handleSubmit(chatManager, apiKey, userInput, submitButton);
+  submitButton.onclick = () => handleSubmit(chatManager, apiKey, <HTMLInputElement>$("user-input"), submitButton);
 })();
